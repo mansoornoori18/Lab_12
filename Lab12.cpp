@@ -39,18 +39,12 @@ int main(){
     // Use .fill() to reset all stock values to 0
     stock.fill(0);
 
-
-
-
-
-
-
-
- 
-
-    cout << " hello " << endl;
-
-
-
+    // Print array after fill
+    cout << "\nAfter resetting stock (fill(0)):\n";
+    for (int qty : stock){
+        cout << qty << " ";
+    }
+    cout << "\n";
+    
     return 0;
 }
