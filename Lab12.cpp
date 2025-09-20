@@ -31,9 +31,17 @@ int main(){
 
     //std::array functions to display array info
     cout << "\n--- Array Info ---\n";
-    cout << "Total items: " << stock.size() << "\n";        // .size()
-    cout << "First item stock: " << stock.front() << "\n";  // .front()
+    cout << "Total items: " << stock.size() << "\n";               // .size()
+    cout << "First item stock: " << stock.front() << "\n";         // .front()
+    cout << "Last item stock: " << stock.back() << "\n";           // .back()
+    cout << "Item at index 5 has stock: " << stock.at(5) << "\n";  // .at()
     
+    // Use .fill() to reset all stock values to 0
+    stock.fill(0);
+
+
+
+
 
 
 
