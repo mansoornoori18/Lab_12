@@ -24,7 +24,17 @@ int main(){
     }
     // Display stock 
     cout << "Store inventory (quantities):\n";
+    for ( int qty : stock){
+        cout << qty <<" ";
+    }
+    cout << "\n";
+
+    //std::array functions to display array info
+    cout << "\n--- Array Info ---\n";
+    cout << "Total items: " << stock.size() << "\n";        // .size()
+    cout << "First item stock: " << stock.front() << "\n";  // .front()
     
+
 
 
 
