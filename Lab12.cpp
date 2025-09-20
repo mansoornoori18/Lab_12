@@ -13,6 +13,19 @@ int main(){
     // open the file that contain the stock numbers 
     ifstream file("inventory.txt");
 
+    // check if the file opened succefully 
+    if (!file) {
+        cout << "could not open inventory.txt\n";
+        return 1;
+    }
+    // read all stock quantities from file 
+    for (size_t i = 0; i < stock.size(); i++){
+        file >> stock[i];
+    }
+    // Display stock 
+    cout << "Store inventory (quantities):\n";
+    
+
 
 
  
